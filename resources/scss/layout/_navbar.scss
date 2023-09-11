@@ -1,0 +1,39 @@
+@use '../vars' as *;
+#layout-nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+
+  background-color: $black;
+  .navbar-brand {
+    height: 150px;
+    margin-right: 40px;
+    text-align: center;
+    position: relative;
+    
+    .logo {
+      max-height: 100%;
+      object-fit: center;
+      border-radius: 50%;
+    }
+
+    h4 {
+      font-size: 14px;
+      position: absolute;
+      bottom: 27px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: black;
+    }
+  }
+
+  .social{
+    margin-right: 30px;
+    a{
+      color: white;
+      font-size: 1.4rem;
+    }
+  }
+}

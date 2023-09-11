@@ -1,0 +1,6 @@
+@use '../vars' as *;
+ body{
+  background:linear-gradient(180deg, $lightgray 10%, $lightblue 45%);
+  min-height: 100vh;
+  display: block;
+ }
