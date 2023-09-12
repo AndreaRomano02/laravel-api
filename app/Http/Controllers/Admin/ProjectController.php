@@ -121,7 +121,7 @@ class ProjectController extends Controller
 
     if (Arr::exists($data, 'image')) {
       if ($project->image) Storage::delete($project->image);
-      $data['image'] = Storage::putfile('project_image', $data['image']);
+      $data['image'] = Storage::putFile('project_image', $data['image']);
     }
 
     $project->update($data);
