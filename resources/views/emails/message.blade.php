@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <h1>Prima email</h1>
+    <h1>{{ $email }}</h1>
 </body>
 
 </html>
