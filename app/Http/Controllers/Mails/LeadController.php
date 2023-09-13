@@ -12,6 +12,6 @@ class LeadController extends Controller
     public function store(Request  $request)
     {
         $data = $request->all();
-        Mail::to('test@boolean.com')->send(new NewContact($data['email'], $data['object'], $data['content']));
+        Mail::to($data['email'])->send(new NewContact($data['email'], $data['object'], $data['content']));
     }
 }

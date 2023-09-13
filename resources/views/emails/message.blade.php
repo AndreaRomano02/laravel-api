@@ -9,7 +9,8 @@
 </head>
 
 <body>
-    <h1>{{ $email }}</h1>
+    <h1>{{ $object }}</h1>
+    <p>{{ $content }}</p>
 </body>
 
 </html>
